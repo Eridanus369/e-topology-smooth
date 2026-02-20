@@ -1,0 +1,95 @@
+schema_version = "1.0.0"
+
+id = "e_topology_smooth"
+version = "2.6.1"
+name = "E Topology Smooth"
+tagline = "Advanced mesh topology smoothing with G0-G4 continuity analysis and multi-algorithm curve fitting"
+maintainer = "Eridnuas"
+type = "add-on"
+
+blender_version_min = "4.5.0"
+license = [
+  "SPDX:GPL-3.0-or-later",
+]
+
+tags = [
+  "Mesh",
+  "Modeling",
+  "Smoothing",
+  "Topology",
+  "Curve Fitting",
+  "Continuity Analysis"
+]
+
+copyright = [
+  "2024-2026 Eridnuas",
+]
+
+homepage = "https://github.com/Eridanus369/e-topology-smooth"
+repository = "https://github.com/Eridanus369/e-topology-smooth.git"
+readme = "README.md"
+tracker = "https://github.com/Eridanus369/e-topology-smooth/issues"
+documentation = "https://github.com/Eridanus369/e-topology-smooth/wiki"
+
+# Supported platforms
+platforms = [
+  "windows-x64",
+  "windows-arm64",
+  "macos-x64",
+  "macos-arm64",
+  "linux-x64"
+]
+
+# Bundled dependencies (Python wheels)
+wheels = [
+  # Windows x64
+  "./wheels/numpy-2.4.2-cp311-cp311-win_amd64.whl",
+  "./wheels/scipy-1.17.0-cp311-cp311-win_amd64.whl",
+  
+  # Windows ARM64
+  "./wheels/numpy-2.4.2-cp311-cp311-win_arm64.whl",
+  "./wheels/scipy-1.17.0-cp311-cp311-win_arm64.whl",
+  
+  # macOS ARM64 (Apple Silicon)
+  "./wheels/numpy-2.4.2-cp311-cp311-macosx_11_0_arm64.whl",
+  "./wheels/scipy-1.17.0-cp311-cp311-macosx_12_0_arm64.whl",
+  
+  # macOS x64 (Intel)
+  "./wheels/numpy-2.4.2-cp311-cp311-macosx_14_0_x86_64.whl",
+  "./wheels/scipy-1.17.0-cp311-cp311-macosx_14_0_x86_64.whl",
+  
+  # Linux x64
+  "./wheels/numpy-2.4.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+  "./wheels/scipy-1.17.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl"
+]
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  ".git/",
+  ".github/",
+  "*.blend1",
+  "*.blend2",
+  "*.blend3",
+  "*.blend4",
+  "*.blend5",
+  "*.zip",
+  "*.log",
+  "tests/",
+  "docs/",
+  "screenshots/",
+  "README.md.bak",
+  "LICENSE.bak",
+  ".coverage",
+  ".pytest_cache/",
+  ".vscode/",
+  ".idea/",
+  "*.pyc",
+  "*.pyo",
+  "*.pyd",
+  ".DS_Store",
+  "Thumbs.db"
+]
+
+[permissions]
+# No special permissions required
