@@ -2,13 +2,13 @@
 E Topology Smooth
 Version: 2.6.1
 Blender: 4.5+
-Author: Eridnuas
+Author: Eridanus
 Description: Advanced mesh topology smoothing and curve fitting tools
 """
 
 bl_info = {
     "name": "E Topology Smooth",
-    "author": "Eridnuas",
+    "author": "Eridanus",
     "version": (2, 6, 1),
     "blender": (4, 5, 0),
     "location": "View3D > Edit Mode > Sidebar > ETS",
@@ -1796,4 +1796,5 @@ def unregister() -> None:
 
 
 if __name__ == "__main__":
+
     register()
