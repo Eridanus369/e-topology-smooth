@@ -130,7 +130,7 @@ If you encounter any problems, please report them on [GitHub Issues](https://git
 
 ## Contributors / 贡献者
 
-- **Eridnanus** - Lead developer / 首席开发者
+- **Eridanus** - Lead developer / 首席开发者
 
 ---
 
