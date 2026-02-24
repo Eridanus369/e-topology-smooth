@@ -1,0 +1,42 @@
+schema_version = "1.0.0"
+
+id = "e_topology_smooth"
+version = "2.7.1"
+name = "E Topology Smooth"
+tagline = "Mesh topology smoothing with G0-G4 continuity analysis"
+maintainer = "Eridanus"
+type = "add-on"
+
+blender_version_min = "4.5.0"
+license = ["SPDX:GPL-3.0-or-later"]
+
+tags = ["Mesh", "Modeling"]  
+
+copyright = ["2024-2026 Eridanus"]
+
+homepage = "https://github.com/Eridanus369/e-topology-smooth"
+repository = "https://github.com/Eridanus369/e-topology-smooth.git"
+readme = "README.md"
+tracker = "https://github.com/Eridanus369/e-topology-smooth/issues"
+documentation = "https://github.com/Eridanus369/e-topology-smooth/wiki"
+
+platforms = [
+  "windows-x64"
+]
+
+wheels = [
+  "./wheels/scipy-1.17.0-cp311-cp311-win_amd64.whl"
+]
+
+[build]
+paths_exclude_pattern = [
+  "__pycache__/",
+  ".git/",
+  "*.blend1",
+  "*.blend2",
+  "*.zip",
+  "*.log",
+  "tests/",
+  "docs/",
+  "screenshots/"
+]
